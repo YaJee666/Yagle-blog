@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+	 <head>
+	  <title>影迷注册</title>
+	  <link rel="stylesheet" type="text/css" href="css/fanRegister.css" />
+	  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      
+	 </head>
+	 <body>
+	 	<!--顶部-->
+	 	<div id="top">
+	 		<img src="./images/logo.png" />
+	 	</div>
+	 	<!--导航栏-->
+	 	<ul id="nav">
+	 		<li><a href="#">首页</a></li>
+	 		<li><a href="#">个人简介</a></li>
+	 		<li><a href="#">成长故事</a></li>
+	 		<li><a href="#">感情经历</a></li>
+	 		<li><a href="#">代表作品</a></li>
+	 		<li><a href="#">影迷注册</a></li>
+	 		
+	 	</ul>
+	 	<!--当前位置-->
+	 	<div id="pos">
+	 		<img src="./images/location.png"><p>影迷注册<span>&gt;&gt;</span>卡梅隆</p>
+	 	</div>
+	 	<!--表单内容区域-->
+	 	<div id="content">
+        
+	 		<form action="ok.html" method="post" name="form1">
+	 			<table>
+	 				<tr>
+	 					<td class="col1">昵称</td>
+	 					<td class="col2"><input type="text" placeholder="请输入昵称" style="font-size:14px;color:#aaa;width:250px;height:26px;line-height:26px" name="nick"/></td>
+	 				</tr>
+	 				<tr>
+	 					<td class="col1">Email</td>
+	 					<td><input name="email" type="text" placeholder="请输入邮箱" style="font-size:14px;color:#aaa;width:250px;height:26px;line-height:26px"></td>
+	 				</tr>
+	 				<tr>
+	 					<td class="col1">性别</td>
+	 					<td style="line-height:30px">
+	 						<label for="boy"><input type="radio" name="sex" id="boy" checked="checked"> 男</label>　
+	 						<label for="girl"><input type="radio" name="sex" id="girl"> 女</label>
+	 					</td>
+	 				</tr>
+	 				<tr>
+	 					<td class="col1">截图</td>
+	 					<td><input type="file" name="file" style="height:26px;line-height:26px;"></td>
+	 				</tr>
+	 				<tr>
+	 					<td class="col1">看电影时间</td>
+	 					<td>
+	 						<select name="type" style="height:26px;padding-bottom:5px">
+	 							<option value="0">请选择时间</option>
+	 							<option value="ts">很少</option>
+	 							<option value="jy">说不准</option>
+	 							<option value="qt">经常</option>
+	 						</select>
+	 					</td>
+	 				</tr>
+	 				<tr>
+	 					<td class="col1">电影类型</td>
+	 					<td>
+	 						
+	 						<input type="checkbox" name="jr">爱情文艺&nbsp;
+	 						<input type="checkbox" name="gwy">科幻&nbsp;	 						
+	 						<input type="checkbox" name="yl">恐怖&nbsp;
+	 						<input type="checkbox" name="xw">魔幻&nbsp;							
+	 						<input type="checkbox" name="yl">战争&nbsp;	 						
+	 						<input type="checkbox" name="qt">喜剧
+	 					</td>
+	 				</tr>
+					<tr>
+	 					<td class="col1">你最喜欢</td>
+	 					<td>
+	 						<input type="checkbox" name="it">IT&nbsp;
+	 						<input type="checkbox" name="jr">阿凡达&nbsp;
+	 						<input type="checkbox" name="gwy">夺命深渊&nbsp;
+	 						<input type="checkbox" name="jk">深海异形&nbsp;
+	 						<input type="checkbox" name="yl">深渊幽灵&nbsp;
+	 						<input type="checkbox" name="xw">泰坦尼克&nbsp;
+							<input type="checkbox" name="jk">真实的谎言&nbsp;
+	 						<input type="checkbox" name="yl">异形&nbsp;
+	 						<input type="checkbox" name="xw">食人鱼&nbsp;	 						
+	 					</td>
+	 				</tr>
+	 				<tr>
+	 					<td class="col1">
+	 						留言
+	 					</td>
+	 					<td>
+	 						<textarea name="ly" cols="50" rows="10" style="font-size:14px;color:#aaa;" placeholder="请在此输入您的留言！"></textarea>
+	 					</td>
+	 				</tr>
+	 				<tr class="tr">
+	 					<td align="center" style="padding-top:20px;"><input type="submit" value="提交" style="height:30px;"></td>
+	 					<td style="padding-top:20px;"><input type="reset" value="重置" style="height:30px;"></td>
+	 				</tr>
+	 			</table>
+	 		</form>
+	 	</div>
+		<div id="link" style="width:1000px;margin:0 auto;text-align:right;font-size:14px">
+		&gt;&gt;<a href="" >问卷调查</a>
+		</div>
+	 	<!--底部信息-->
+	 	<div id="footer">
+	 		<p class="info">
+		 		<a href="#">联系我们</a>　|　 
+		 		<a href="#">收藏本站</a>　|　 
+		 		<a href="#">人才招聘</a>　|　 
+		 		<a href="http://www.foheart.org">开源社区</a>　|　
+		 		<a href="#">信息反馈</a>
+	 		</p>
+	 		<p class="copy">&copy; 济南大学</p>
+	 	</div>
+	 </body>
+ </html><!--信息反馈页-->

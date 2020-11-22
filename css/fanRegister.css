@@ -1,0 +1,106 @@
+﻿*{
+	margin: 0px;
+	padding:0px;
+}
+body{
+	background: #fcfaf5;
+	font-family:"Microsoft YaHei";/*设定所有的字体均为“微软雅黑”*/
+}
+/*顶部区域*/
+#top{
+	width:1000px;
+	margin:0px auto;
+	padding-top:27px;
+}
+/*导航栏*/
+#nav{
+	width: 1000px;
+	height: 45px;
+	list-style-type: none;
+	background-color: #D40B07;
+	margin:0 auto;
+	font-size: 17px;
+}
+#nav li{
+	width: 142px;
+	height:45px;
+	text-align: center;
+	float: left;
+	line-height: 45px;/*控制文字垂直居中*/
+}
+#nav li a:link,#nav li a:visited{
+	color:#fff;
+	text-decoration: none;
+}
+#nav li a:hover{
+	text-decoration: underline;
+}
+/*当前位置*/
+#pos{
+	width: 960px;
+	margin: 0 auto;
+	padding:10px 20px  20px;
+	font-size:12px;
+}
+#pos img{
+	float: left;/*使文字和图片出现在一行*/
+}
+#pos p{
+	color:#767676;
+	font-size: 16px;
+}
+#pos span{
+	font-size: 12px;
+}
+/*主要内容区域*/
+#content{
+	width: 1000px;
+	margin:0 auto;/*控制内容区域水平居中*/
+}
+/*表单部分*/
+form{
+	border: 1px solid #e0d4af;
+	background-color: #fff;
+	padding: 20px;
+	line-height: 50px;
+	background-image: url(../images/mn.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+form table{
+	margin:0 auto;
+}
+.col1{
+	width: 100px;
+	font-size: 14px;
+	color: #333;
+}
+.col2{
+	width: 350px;
+}
+.tr{
+	text-align: center;
+}
+.tr input{
+	width: 80px;
+}
+/*底部信息*/
+#footer{
+	clear: both;
+	text-align: center;
+	padding-top: 35px;
+	font-size: 13px;
+}
+.info a:link,.info a:visited{
+	color: #999;
+	text-decoration: none;
+}
+.info a:hover{
+	color:red;
+	text-decoration: underline;
+}
+.copy{
+	margin-top: 15px;
+	margin-bottom: 35px;
+	color:#999;
+}

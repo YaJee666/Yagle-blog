@@ -1,0 +1,362 @@
+
+/*全局body*/
+body {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+/**
+ * 头部
+ */
+
+header {
+	width: 100%;
+	height: 580px;
+	background-color: #34415f;
+	background-image: url(../images/container.png);
+	background-size: cover;
+}
+
+div.poster-container {
+	width: 1139px;
+	height: 580px;
+	position: relative;
+	margin: 0 auto;
+}
+
+/**
+ * 人物 Banner
+ */
+
+div.poster {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	background: top right no-repeat url(../images/banner.jpg);
+	animation: showPoster 1s ease 0.5s 1 forwards;
+}
+
+
+/**
+ * 遮罩层
+ */
+
+div.mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: top right url(../images/mask.png) no-repeat;
+}
+
+
+/* banner 左侧的影片介绍 */
+div.content {
+	position: absolute;
+}
+
+
+
+dl.title {
+	color: #FFFFFE;
+	position: relative;
+	z-index: 2;
+}
+
+dl.title>h1 {
+	font-weight: 300;
+	font-size: 2.56em;
+	padding-left: 1.25em;
+}
+
+dl.title>dd {
+	display: block;
+	overflow: hidden;
+	width: 42%;
+	font-size: 0.9em;
+	text-indent: 1.8em;
+	color: #EEE;
+	line-height: 200%;
+}
+/* banner 左侧的影片介绍  结束*/
+
+
+
+/**
+ * 主文章框
+ */
+
+article {
+	width: 1119px;
+	background: #FFF;
+	position: relative;
+	margin: -200px auto 50px;
+	border-top-left-radius: 10px; 
+	border-top-right-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 0px 1px 1px lightgray inset;
+}
+
+
+/**
+ * 副标题
+ */
+
+h3 {
+	border-left: #4F9CEE 20px solid;
+	border-bottom: #4F9CEE 2px solid;
+	padding-left: 1%;
+	float: left;
+	width: 15%;
+}
+
+
+
+/**
+ * 主要演员列表
+ */
+/** 选择器*/
+dl.majorActorList a {
+	float: left;
+	display: block;
+	width: 99px;
+	text-decoration: none;
+	color: #333;
+	line-height: 210%;
+	text-shadow: 1px 1px 1px lightgray;
+	transition: all 0.5s;
+}
+
+dl.majorActorList img {
+	box-shadow: 1px 1px 1px 1px gray;
+	border-radius: 5px;
+}
+
+dl.majorActorList>dd {
+	display: inline-block;
+}
+
+
+/****************************************/
+
+/*
+ * 四个小图标的不同transform
+ */
+/** 选择器*/
+dl.majorActorList>dd:nth-child(1):hover>a:nth-of-type(1) {
+	transform: rotate(360deg);
+}
+
+dl.majorActorList>dd:nth-child(2):hover>a:nth-of-type(1) {
+	transform: scale(1.3);
+}
+
+dl.majorActorList>dd:nth-child(3):hover>a:nth-of-type(1) {
+	transform: skew(-15deg);
+}
+
+dl.majorActorList>dd:nth-child(4):hover>a:nth-of-type(1) {
+	transform: rotateY(180deg) rotateZ(360deg);
+}
+
+
+/****************************************/
+
+
+
+
+/*导航*/
+nav>ul {
+	position: relative;
+	line-height: 300%;
+	list-style: none;
+	background: rgb(79, 156, 238);
+	height: 3em;
+	padding: 0;
+	margin: 0;
+	padding-left: 1em;
+}
+/*导航菜单的每个item*/
+nav>ul>li {
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+/** 小滑块 */
+nav>ul>li~div {
+	position: absolute;
+	width: 80px;
+	height: 3em;
+	top: 0;
+	left: 1em;
+	background: #EB7B55;
+	transition: left 0.5s;
+}
+/*导航菜单的标签*/
+nav>ul>li>a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #FFFFFE;
+}
+
+
+
+
+/*导航栏每个小滑块  在li为hover时候的动作*/
+nav > ul > li:nth-child(2):hover ~ div{
+	left: 6em;
+}
+
+nav>ul>li:nth-child(3):hover~div {
+	left: 11em;
+}
+
+nav>ul>li:nth-child(4):hover~div {
+	left: 16em;
+}
+
+nav>ul>li:nth-child(5):hover~div {
+	left: 21em;
+}
+
+/*导航结束*/
+
+
+
+/************************************************/
+/**
+ * Flex [基本信息]
+ */
+.fundamental {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.fundamental>dl {
+	flex: 1;
+	font-size: 0.9em;
+}
+/** 选择器*/
+.fundamental>dl>dt {
+	float: left;
+	padding: 10px 0 10px 5%;
+	margin: 0;
+	width: 15%;
+	color: gray;
+	font-weight: bold;
+	border-bottom: 2px dotted darkgray;
+}
+
+.fundamental>dl>dd {
+	float: left;
+	padding-left: 10%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0;
+	width: 70%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	border-bottom: 2px dotted darkgray;
+}
+
+div.synopsis {
+	border: 10px solid transparent;
+	border-image: 27 27 27 27 url(../images/border.png) stretch;
+}
+
+.actorList {
+	list-style: none;
+}
+
+.actorList img {
+	width: 135px;
+	float: left;
+}
+
+.actorList>li {
+	padding: 0.5em 0;
+	border-bottom: 1px dashed gray;
+}
+
+.actorList dl {
+	float: left;
+	width: 60%;
+	margin-left: 40px;
+}
+
+
+
+
+
+.animation-div{
+	width: 50px;
+	height: 50px;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+	z-index: 2;
+	opacity: 0.5;
+	background: lightgreen;
+	animation: animation1 10s linear infinite;
+}
+
+/**
+ * percentage
+ */
+@keyframes animation1 {
+	0% {
+		left: 110%;
+		bottom: -10%;
+	}
+	33% {
+		left: 50%;
+		bottom: 100%;
+	}
+	66% {
+		left: -10%;
+		bottom: 50%;
+	}
+	100% {
+		left: 110%;
+		bottom: -10%;
+	}
+}
+
+
+
+/* from to*/
+@keyframes showPoster {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.comment{
+	border: 10px solid transparent;
+	border-image: 27 27 27 27 url(../images/border.png) stretch;
+	filter:blur(3px);
+	transition: filter 0.5s; 
+}
+
+.comment:hover{
+	filter: blur(0px);
+}
+
+.highlight{
+	border: 10px solid transparent;
+	border-image: 27 27 27 27 url(../images/border.png) stretch;
+}
+
+

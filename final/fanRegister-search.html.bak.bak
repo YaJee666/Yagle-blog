@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/search.css" />
+		<title>问卷调查</title>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">主页<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">作品锦集</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">获奖记录</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">人物评价</a>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="container">
+
+			<h1 id="title">问卷调查</h1>
+			<form>
+				<div class="row">
+
+					<div class="col-lg-6 col-md-12">
+						<div class="form-group">
+							<label for="email">邮件地址</label>
+							<input type="email" class="form-control" id="email" placeholder="邮箱地址">
+						</div>
+						<div class="form-group">
+							<label for="username">昵称</label>
+							<input type="text" class="form-control" id="username" placeholder="您的昵称">
+						</div>
+						<div class="form-group">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="sex" id="sex_male" value="m" checked>
+								<label class="form-check-label" for="sex_male">
+							   	 男
+							</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="sex" id="sex_female" value="f">
+								<label class="form-check-label" for="sex_female">
+						     	 女
+						    </label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="pwd">出生日期</label>
+							<input type="date" class="form-control" id="birth">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12">
+						<h5 id="prefer">请选择所有您喜欢的作品</h5>
+
+						<div class="row">
+
+							<div class="col-6 col-md-6 col-lg-3 movie">
+
+								
+									<label for="movie_1">
+										<img src="images/1.jpg" />
+									</label>
+									<div class="form-check">
+										<input class="form-check-input position-static" type="checkbox" id="movie_1" value="1" />
+									</div>
+								
+
+							</div>
+
+							<div class="col-6 col-md-6 col-lg-3 movie">
+
+								
+									<label for="movie_2">
+										<img src="images/2.jpg" />
+									</label>
+									<div class="form-check">
+										<input class="form-check-input position-static" type="checkbox" id="movie_2" value="2" />
+									</div>
+								
+
+							</div>
+
+							<div class="col-6 col-md-6 col-lg-3 movie">
+
+								
+									<label for="movie_3">
+										<img src="images/3.jpg" />
+									</label>
+									<div class="form-check">
+										<input class="form-check-input position-static" type="checkbox" id="movie_3" value="3" />
+									</div>
+								
+
+							</div>
+
+							<div class="col-6 col-md-6 col-lg-3 movie">
+
+								
+									<label for="movie_4">
+										<img src="images/4.jpg" />
+									</label>
+									<div class="form-check">
+										<input class="form-check-input position-static" type="checkbox" id="movie_4" value="4" />
+									</div>
+								
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div class="col-12">
+						<div class="form-group">
+							<label for="reason">请说明您的理由</label>
+							<textarea class="form-control" id="reason" rows="3"></textarea>
+						</div>
+					</div>
+
+				</div>
+				
+				<button type="submit" class="btn btn-primary">提交</button>
+			</form>
+
+		</div>
+		<a href="fanRegister.html">返回上一级</a>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" ></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

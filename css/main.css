@@ -1,0 +1,84 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	font-family:arial,helvetica,sans-serif;
+	font-size:16px;
+	height:auto;
+	background:#f0f0f0;
+}
+
+#nav{
+	width:1000px;
+	height:45px;
+	margin:0 auto;
+	background:#D40B07;
+	font-size:17px;
+}
+
+#nav li
+{
+	width:150px;
+	height:45px;
+	text-align:center;
+	float:left;
+	line-height:45px;
+	list-style-type:none;
+}
+#nav li a:link,#nav li a:visited{
+	color:#fff;
+	text-decoration:none;
+}
+#nav li a:hover{
+	text-decoration:underline;
+}
+
+#pos{
+	width: 960px;
+	margin: 0 auto;
+	padding:10px 10px ;
+	font-size:1.3em;
+	font-family:"微软雅黑";
+	color:#4F4F4F;
+}
+#pos img{
+	float: left;/*使文字和图片出现在一行*/
+}
+#pos p{
+	color:#fff;
+	font-size: 16px;
+}
+#pos span{
+	font-size: 12px;
+}
+
+#content{	
+	width: 1000px;
+	background-color:#fff;
+	padding:5px;
+	margin:10px  auto; 
+    border: 1px solid rgb(197,207,245);  
+}
+/*页脚*/
+#footer{
+	clear: both;
+	text-align: center;
+	padding-top: 35px;
+	font-size: 13px;
+}
+.info a:link,.info a:visited{
+	color: #999;
+	text-decoration: none;
+}
+.info a:hover{
+	color:black;
+	text-decoration: underline;
+}
+.copy{
+	margin-top: 15px;
+	margin-bottom: 35px;
+	color:#999;
+}
+	 

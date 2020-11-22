@@ -1,0 +1,83 @@
+
+*{
+	font-family: "microsoft yahei";
+}
+
+
+
+/*全局 p 标签 首行缩进 2em */
+p {
+	text-indent: 2em;
+}
+
+
+footer {
+	width: 100%;
+	height: 100px;
+	background: #364261;
+}
+
+#director,#scriptwriter,#filmproducer{
+	font-weight: bold;
+}
+
+dt[id^="dt_"]{
+	color: gray;
+}
+
+#titanic{
+	font-style: italic;
+	font-size:2.25em;
+	font-weight: 300;
+}
+
+dl.majorActorList a:hover{
+	color:red;
+}
+
+dl.majorActorList > dd:nth-child(2):hover{
+	background: #DDD;
+	
+}
+dl.majorActorList > dd:nth-child(2):active{
+	background: #999;
+}
+
+
+.synopsis > p {
+	text-align: center;
+	cursor:pointer;
+}
+
+
+.synopsis > p:nth-of-type(2n){
+	background: gray;
+}
+
+
+
+.highlight > p:nth-child(2n+1):first-letter{
+	font-size: 2em;
+}
+
+
+.actorList dd{
+	font-style: italic;
+	font-weight: bold;
+}
+
+/*角色介绍 -> 演员名字*/
+.actor_name {
+	font-size: 1.2em;
+}
+
+/** 选择器*/
+.actor_name +dd { 
+	color: gray;
+	font-size: 0.9em;
+}
+
+.actor_name ~dd{
+	font-weight: lighter;
+}
+
